@@ -1,0 +1,257 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Global Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #232c5f;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Navbar tetap terlihat saat di-scroll */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 7px solid white;
+}
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+.logo-img {
+  max-height: 40px; /* Atur tinggi maksimum logo sesuai kebutuhan */
+}
+.navbar-nav .nav-link {
+  color: white;
+  margin-right: 20px;
+}
+.navbar-nav .nav-link:hover {
+  color: #f9a826;
+}
+.dropdown-menu {
+  background-color: #232c5f;
+}
+.dropdown-menu .dropdown-item {
+  color: white;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f9a826;
+}
+.btn-book-now {
+  color: white;
+  background-color: #f9a826;
+  border: 7px solid #364078;
+  border-radius: 25px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.btn-book-now:hover {
+  background-color: #364078;
+  color: white;
+}
+/* Navbar Collapse */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+/* Custom Hamburger Menu Color */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5); /* Ubah border hamburger menjadi warna putih transparan */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* Ubah icon hamburger menjadi warna putih */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+  margin-bottom: 0; /* Ensure no extra space below hero section */
+}
+
+.hero-img-wrapper {
+  position: absolute;
+  margin-top: 70px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 10;
+  max-width: 50%; /* Adjust this value to fit the desired width */
+}
+
+.hero-title {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: 100;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1rem; /* Adjust font size as needed */
+  font-weight: 80;
+  margin-bottom: 20px;
+}
+
+.hero-form {
+  display: flex;
+  align-items: center; /* Align items to center */
+  position: relative;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.phone-input {
+  border-radius: 25px;
+  padding: 10px 60px 10px 20px; /* Add padding to accommodate the button */
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  border-radius: 25px;
+  background-color: #f9a826; /* Warna default */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: absolute;
+  right: -120px; /* Sesuaikan dengan jarak dari tepi kanan input */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%; /* Sesuaikan tinggi dengan input */
+  box-sizing: border-box;
+  transition: background-color 0.3s ease; /* Animasi transisi */
+}
+.btn-submit:hover {
+  background-color: #364078;
+}
+/* Rectangle Section */
+.rectangle-section {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto; /* Center horizontally */
+  max-width: 1200px; /* Set maximum width to control space */
+  position: relative;
+  margin-top: -10px; /* Adjust if needed to overlap with hero image */
+}
+
+/* Ensure the rectangle content is centered */
+.rectangle-content {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Allow horizontal scroll if necessary */
+}
+
+.sub-rectangle {
+  background-color: white;
+  border: 2px solid orange;
+  border-radius: 5px;
+  margin-right: 10px; /* Space between rectangles */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sub-rectangle .icon {
+  width: 24px; /* Adjust icon size as needed */
+  height: 24px;
+  margin-right: 10px;
+}
+
+.sub-rectangle span {
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navbar-nav {
+    background-color: #232c5f;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    text-align: center;
+  }
+  .dropdown-menu {
+    background-color: #232c5f;
+  }
+  .btn-book-now {
+    display: block;
+    margin: 10px auto;
+  }
+}
+/* Navbar Hide on Scroll */
+.navbar.hidden {
+  top: -80px;
+  transition: top 0.3s;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hero-content {
+    left: 0;
+    padding: 0 10px; /* Add padding for smaller screens */
+    max-width: 100%;
+  }
+
+  .input-wrapper {
+    flex-direction: column; /* Stack input and button vertically on small screens */
+    align-items: stretch; /* Make elements full width */
+  }
+
+  .phone-input {
+    padding-right: 0; /* Remove extra padding on the right */
+    margin-bottom: 20px; /* Space between input and button */
+  }
+
+  .btn-submit {
+    width: 100%; /* Full width for smaller screens */
+    position: static; /* Reset position for small screens */
+    margin-top: 10px; /* Space above button in smaller screens */
+    height: auto; /* Reset height for small screens */
+  }
+}
