@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!--=============== GOOGLE FONTS ===============-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!--=============== UNICONS ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Cakrawala Bahasa</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo"> <img src="./assets/img/logo.png" alt="" /></a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">Produk <i class="ri-arrow-down-s-line dropdown__arrow"></i></div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link"> <i class="ri-pie-chart-line"></i> Overview </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link"> <i class="ri-arrow-up-down-line"></i> Transactions </a>
+                </li>
+
+                <!-- =============== DROPDOWN SUBMENU =============== -->
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link"><i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i></div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#" class="dropdown__sublink"> <i class="ri-file-list-line"></i> Documents </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="dropdown__sublink"> <i class="ri-cash-line"></i> Payments </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="dropdown__sublink"> <i class="ri-refund-2-line"></i> Refunds </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="nav__link">Program</a></li>
+
+            <li><a href="#" class="nav__link">Promo</a></li>
+
+            <li><a href="#" class="nav__link">Event</a></li>
+            <li><a href="#" class="nav__link">Beasiswa</a></li>
+            <li><a href="#" class="nav__link">Testimoni</a></li>
+
+            <!--=============== DROPDOWN 2 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">Layanan <i class="ri-arrow-down-s-line dropdown__arrow"></i></div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link"> <i class="ri-user-line"></i> Profiles </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link"> <i class="ri-lock-line"></i> Accounts </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link"> <i class="ri-message-3-line"></i> Messages </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav__link"><button class="btn btn-book-now">Booking Now!</button></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--=============== HERO ===============-->
+    <main>
+      <div class="hero">
+        <img src="./assets/img/figure-hero.png" alt="" />
+        <div class="hero-text">
+          <div>
+            <p class="judul">Platform Layanan Bahasa dan Seni Terintegrasi dan Terkoneksi Global Pertama di Indonesia</p>
+          </div>
+          <p>Masukkan No. HP kamu, dapetin cashback 10%</p>
+          <div class="hero-form">
+            <div class="input-wrapper">
+              <input type="text" placeholder="+62" class="form-control phone-input" maxlength="14" />
+              <button class="btn btn-submit">Segera Daftar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- KOTAK 6 MENU LAYANAN -->
+    <div class="features container-xs">
+      <div class="features__content wrapper">
+        <div class="features__items item">
+          <div class="features__item">
+            <img src="./assets/img/icon video.png" alt="Learning Icon" class="features__icon--video" />
+            <h3 class="features__title--video ui heading size-headingmd">Video Belajar<br />dan Modul</h3>
+          </div>
+          <div class="features__item-1">
+            <img src="./assets/img/icon languange.png" alt="Language Icon" class="features__icon--video" />
+            <h4 class="features__title--language ui heading size-headingmd">Kursus<br />Bahasa</h4>
+          </div>
+          <div class="features__item-2">
+            <img src="./assets/img/icon quran.png" alt="Culture Icon" class="features__icon--video" />
+            <h5 class="features__title--video ui heading size-headingmd">Kursus Seni<br />dan Budaya</h5>
+          </div>
+          <div class="features__item-1">
+            <img src="./assets/img/icon camp.png" alt="Camp Icon" class="features__icon--video" />
+            <h6 class="features__title--language ui heading size-headingmd">Camp<br />Bahasa</h6>
+          </div>
+          <div class="features__item-4">
+            <img src="./assets/img/icon translating.png" alt="Translation Icon" class="features__icon--video" />
+            <p class="features__title--translating ui heading size-headingxs">Alih Bahasa &<br />Cek Grammar</p>
+          </div>
+          <div class="features__item-5">
+            <img src="./assets/img/icon menu bar.png" alt="Products Icon" class="features__icon--menu-bar" />
+            <p class="features__title--all-products ui heading size-headingmd">Semua<br />Produk</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
